@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application - Input Form by Tooplate</title>
+	<!--
+    Template 2105 Input
+	http://www.tooplate.com/view/2105-input
+	-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/tooplate.css">
+</head>
+
+<body id="application">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12  mx-auto">
+                <header class="mt-5 mb-5 text-center">
+                    <h3>Application</h3>
+                    <p class="tm-form-description">outline of the chess engine:
+<br>
+1. Board Representation-> Used 2D array to represent the black and white pieces in chess using symbols. Want to make this more effective and by using bit board: analyze chess positions with few CPU instructions and hold a massive number of positions in memory efficiently
+This is due to the logical operations it uses like AND, OR
+</br>
+
+</p>
+To optimize the algorithm: _alpha-beta pruning: Alpha-beta pruning is an optimization method to the minimax algorithm that allows us to disregard some branches in the search tree. This helps us evaluate the minimax search tree much deeper, while using the same resources.
+The alpha-beta pruning is based on the situation where we can stop evaluating a part of the search tree if we find a move that leads to a worse situation than a previously discovered move.
+The alpha-beta pruning does not influence the outcome of the minimax algorithm — it only makes it faster.
+The alpha-beta algorithm also is more efficient if we happen to visit first those paths that lead to good moves.
+
+Our goal is to make use of Mate Killer, this sacrifices a friendly piece to acquire something more valuable from the opponent side. 
+Problem: The Alpha pruning
+I want to implement another algorithm such that the engine searches for the worst damage it could take and after that look for a possible win or a killer attack to turn the game around. I want to use a container class that keeps the most optimal move, but also searches for a possible killer move 3 depths in. Before generating a move, I would compare these two to look for the most highest advantage in the game.
+
+Some possible applications to real time: A great testing program for possible cracks in security for a company with its problem solving skills.
+</p></p>
+                </header>
+                <form action="" method="post" enctype="multipart/form-data" class="tm-form-white tm-font-big">
+                   
+                       
+                </form>
+            </div>
+        </div>
+        <footer class="row tm-mt-big mb-3">
+            <div class="col-xl-12 text-center">
+                <p class="d-inline-block tm-bg-black white-text py-2 tm-px-5">
+                    Copyright &copy; 2018 Company Name
+                    
+                    - <a rel="nofollow" href="http://www.tooplate.com/view/2105-input">Input</a> by 
+                    <a rel="nofollow" href="http://tooplate.com" class="tm-footer-link">Tooplate</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+</body>
+
+</html>
